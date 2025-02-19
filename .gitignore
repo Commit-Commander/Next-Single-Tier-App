@@ -1,41 +1,61 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# 📌 Git Ignore File
+# Reference: https://help.github.com/articles/ignoring-files/
+# This file specifies which files and directories should be ignored by Git.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# ────────────────────────────
+# 📦 Dependencies & Package Manager Files
+# ────────────────────────────
+/node_modules          # Installed dependencies (npm, yarn, pnpm)
+/.pnp                  # Yarn Plug'n'Play files
+.pnp.*                 # Yarn PnP cache
+.yarn/*                # Ignore all Yarn-related files
+!.yarn/patches         # Allow patches (if any)
+!.yarn/plugins         # Allow Yarn plugins
+!.yarn/releases        # Allow Yarn releases
+!.yarn/versions        # Allow Yarn versions
 
-# testing
-/coverage
+# ────────────────────────────
+# 🧪 Testing & Coverage Reports
+# ────────────────────────────
+/coverage              # Code coverage reports from testing frameworks
 
-# next.js
-/.next/
-/out/
+# ────────────────────────────
+# ⚡ Next.js Build Files
+# ────────────────────────────
+/.next/                # Next.js build output
+/out/                  # Next.js static export output
 
-# production
-/build
+# ────────────────────────────
+# 🚀 Production Build Files
+# ────────────────────────────
+/build                 # Generic build output directory
 
-# misc
-.DS_Store
-*.pem
+# ────────────────────────────
+# 🔧 Miscellaneous
+# ────────────────────────────
+.DS_Store              # macOS system file
+*.pem                  # Private key files
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# ────────────────────────────
+# 🛠 Debugging Logs
+# ────────────────────────────
+npm-debug.log*         # npm debug logs
+yarn-debug.log*        # Yarn debug logs
+yarn-error.log*        # Yarn error logs
+.pnpm-debug.log*       # pnpm debug logs
 
-# env files (can opt-in for committing if needed)
-.env*
+# ────────────────────────────
+# 🔑 Environment Variables (Sensitive Information)
+# ────────────────────────────
+.env*                  # Ignore all .env files (opt-in if needed)
 
-# vercel
-.vercel
+# ────────────────────────────
+# ▲ Vercel Deployment
+# ────────────────────────────
+.vercel                # Vercel deployment files
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# ────────────────────────────
+# 🏗 TypeScript Build Files
+# ────────────────────────────
+*.tsbuildinfo          # TypeScript build cache files
+next-env.d.ts          # Next.js TypeScript environment file

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // 🔧 TypeScript Compiler Options
     "paths": {
       "@/*": ["./*"]
     }
